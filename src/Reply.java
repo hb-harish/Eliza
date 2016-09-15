@@ -15,10 +15,11 @@ public class Reply {
 		hedgeMap.put(0, "Please tell me more. " );
 		hedgeMap.put(1, "Many of my patients tell me the same thing. " );
 		hedgeMap.put(2, "I understand, but it is getting late, maybe we had better quit " );
-		hedgeMap.put(3, "Interesting, " );
-		hedgeMap.put(4, "I find it peculiar, " );
+		hedgeMap.put(3, "Interesting. Please go on." );
+		hedgeMap.put(4, "Not everybody feels the same way." );
+		hedgeMap.put(5, "Let us talk more about your feelings" );
 		Random rnd = new Random();
-		int i = rnd.nextInt(5);
+		int i = rnd.nextInt(6);
 		return hedgeMap.get(i);
 	}
 	
@@ -26,8 +27,9 @@ public class Reply {
 	{
 		qualifierMap.put(0, "Why do you say that " );
 		qualifierMap.put(1, "It might not be true when you seem to think that " );
-		qualifierMap.put(3, "So, you are concerned that " );
-		qualifierMap.put(4, "How do you feel about " );
+		qualifierMap.put(2, "So, you are concerned that " );
+		qualifierMap.put(3, "How do you feel about " );
+		qualifierMap.put(4, "I find it peculiar, " );
 		Random rnd = new Random();
 		int i = rnd.nextInt(5);
 		return qualifierMap.get(i);
@@ -40,6 +42,8 @@ public class Reply {
 		replacementMap.put("me", "you" );		
 		replacementMap.put("my", "your" );
 		replacementMap.put("am", "are" );
+		replacementMap.put("myself", "yourself" );
+		replacementMap.put("you", "me" );
 		String re;
 		if (replacementMap.containsKey(z))
 			re = replacementMap.get(z);
