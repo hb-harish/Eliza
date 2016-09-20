@@ -8,6 +8,8 @@ public class ElizaApp {
 		Scanner sc = new Scanner(System.in);
 		Reply r = new Reply();
 		System.out.println("So tell me what brings you here");
+		Thread threadC = new RandomQ();
+		threadC.start();
 
 		while(true)
 		{
