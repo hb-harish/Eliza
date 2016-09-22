@@ -16,8 +16,8 @@ public class ElizaApp {
 		Reply r = new Reply();
 		System.out.println("So tell me what brings you here today\t:");
 //		random question generator
-		Thread threadC = new RandomQ();
-		threadC.start();
+//		Thread threadC = new RandomQ();
+//		threadC.start();
 		
 		Connection con = null;
 		Statement stmt = null;
@@ -95,7 +95,7 @@ public class ElizaApp {
 					e.printStackTrace();
 				}
 			}
-		threadC.stop();
+//		threadC.stop();
 		}
 	
 
