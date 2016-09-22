@@ -23,7 +23,6 @@ public class ElizaApp {
 		ResultSet rs = null;
 		PreparedStatement pstmt = null;
 		PreparedStatement pstmt2 = null;
-		PreparedStatement pstmt3 = null;
 		try
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
