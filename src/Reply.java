@@ -17,7 +17,7 @@ public class Reply {
 		hedgeMap.put(2, "I understand, but it is getting late, maybe we had better quit " );
 		hedgeMap.put(3, "Interesting. Please go on." );
 		hedgeMap.put(4, "Not everybody feels the same way." );
-		hedgeMap.put(5, "Let us talk more about your feelings" );
+		hedgeMap.put(5, "Let us talk more about your feelings. " );
 		Random rnd = new Random();
 		int i = rnd.nextInt(6);
 		return hedgeMap.get(i);
