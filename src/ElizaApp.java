@@ -66,7 +66,7 @@ public class ElizaApp {
 				rs = pstmt2.executeQuery();
 				while(rs.next())
 				{
-					System.out.println(rs.getString("description") + " ");
+					System.out.print(rs.getString("description") + " ");
 				}
 				for (int j =0; j<parts.length; j++)
 				{
