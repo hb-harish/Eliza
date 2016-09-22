@@ -15,8 +15,9 @@ public class ElizaApp {
 		Scanner sc = new Scanner(System.in);
 		Reply r = new Reply();
 		System.out.println("So tell me what brings you here today\t:");
-//		Thread threadC = new RandomQ();
-//		threadC.start();
+//		random question generator
+		Thread threadC = new RandomQ();
+		threadC.start();
 		
 		Connection con = null;
 		Statement stmt = null;
@@ -26,7 +27,6 @@ public class ElizaApp {
 		try
 		{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-                        //con = DriverManager.getConnection("jdbc:oracle:thin:sys as sysdba/oracle@localhost:1521:orcl");
             con = DriverManager.getConnection("jdbc:oracle:thin:ora1/ora1@localhost:1521:orcl");
 			stmt = con.createStatement();
 
@@ -95,6 +95,8 @@ public class ElizaApp {
 					e.printStackTrace();
 				}
 			}
+		threadC.stop();
 		}
+	
 
 }
